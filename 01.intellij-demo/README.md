@@ -75,24 +75,24 @@ IntelliJ IDEA proporciona una integración completa con Maven, lo que permite ex
 1. Diríjase a: <https://start.spring.io/>
 2. Llene la información como lo evidencia abajo:
 
-![Spring Initilizr](/imgs/01.png)
+![Spring Initilizr](imgs/01.PNG)
 
     Recuerde indicar Spring Web como dependencia. 
 
 3. Genere el proyecto para bajar el comprimido. Extraiga el proyecto descargado.
 4. Vaya a IntelliJ IDE y selecciones Importar Proyecto. Vaya al directorio del proyecto e impórtelo.
 
-    ![](/imgs/02.png)
+    ![](imgs/02.png)
 
 5. Note que en caso de no tener habilitado el Plugin de Maven, deberá permitir su funcionalidad. En la imagen anterior verá que el archivo pom.xml no se reconoce como Maven. Para habilitar el Plugin, siga los siguientes pasos (en caso de tener habilitado el Plugin puede saltarse este paso):
 
     ``File → Settings → Plugins → Maven [OK]``
 
-    ![](/imgs/03.png)
+    ![](imgs/03.png)
 
 6. Su proyecto será reconocido como Maven. Ahora lo deberá ver así:
 
-    ![](/imgs/04.png)
+    ![](imgs/04.png)
 
 7. Habilite la ventana para Maven Projects en caso de que no la tenga visible siguiendo la secuencia de pasos:
 
@@ -100,18 +100,18 @@ IntelliJ IDEA proporciona una integración completa con Maven, lo que permite ex
 
 8. Si no reconoce su proyecto como Maven, de click derecho sobre el archivo pom.xml y de en la opción ``Add as Maven Project``, como se evidencia a continuación:
 
-    ![Alt text](/imgs/05.gif)
+    ![Alt text](imgs/05.gif)
 
 ### Crear un proyecto Maven y adicionar Spring manualmente
 
 1. Seleccione crear nuevo proyecto, en la sección de la izquierda elija Maven, del lado derecho seleccione la versión de JDK.
 
-    ![Alt text](/imgs/06.png)
+    ![Alt text](imgs/06.png)
 
 2. Al no seleccionar el arquetipo (archetype), IntelliJ IDEA entenderá que se usará el arquetipo Quickstart, lo cual está bien para nuestro ejemplo.
 3. En la próxima pantalla especifique el nombre, GroupId, ArtifactId y ubicación.
 
-    ![Alt text](/imgs/07.png)
+    ![Alt text](imgs/07.png)
 
 4. Con el proyecto creado, configure el ``pom.xml`` de acuerdo con el fragmento a continuación:
 
@@ -162,7 +162,7 @@ IntelliJ IDEA proporciona una integración completa con Maven, lo que permite ex
 
 5. Después de modificar el ``pom.xml``, aparecerá una notificación para importar cambios. También puede hacerlo con la opción que genera Maven de actualización.
 
-    ![Alt text](/imgs/08.png)
+    ![Alt text](imgs/08.png)
 
 ## Configuración del proyecto
 
@@ -172,7 +172,7 @@ Ahora procedemos a realizar algunos ajustes sobre el proyecto para ver nuestro H
 
 1. Vamos a crear una clase que contendrá el Main del proyecto. Recordando que una de las buenas **prácticas java** es no crear ningún código en el paquete por defecto, por lo que diríjase al folder main/java y cree un paquete.
 
-    ![Alt text](/imgs/09.png)
+    ![Alt text](imgs/09.png)
 
 2. Escriba el nombre del paquete, en nuestro caso: ``co.com.ejemplouno``.
 3. Cree una clase dentro del paquete llamada ``ExampleApplication`` y escriba el siguiente código:
@@ -245,17 +245,17 @@ public class ExampleController {
 
 Para la ejecución haga click sobre la clase principal y seleccione en la opción ``Run '...'``:
 
-![Alt text](/imgs/10.png)
+![Alt text](imgs/10.png)
 
 Verá la salida y ejecución en la ventana inferior de IntelliJ IDEA.
 
-![Alt text](/imgs/11.png)
+![Alt text](imgs/11.png)
 
 ### Prueba del servicio
 
 Para probar el servicio REST creado, se puede usar la herramienta Postman o cualquier otra similar. Se debe ingresar la URL del endpoint `http://localhost:8080/api/example/hello-world` y seleccionar el método GET. Al enviar la solicitud, se debe obtener una respuesta con el texto ``Hello World!`` y el código de estado ``200 OK``.
 
-![Alt text](/imgs/12.png)
+![Alt text](imgs/12.png)
 
 ### Detener la ejecución del proyecto
 
@@ -279,15 +279,15 @@ Con ``java --version``
 
 Conocerá la versión de java en su equipo, SE Runtime Environment y Server VM. Esa misma versión debe considerarla para crear su proyecto Maven para Spring Boot y revisar la compatibilidad. En el [enlace](https://endoflife.date/spring-boot) puede validar la compatibilidad de Java con cada Release de Spring Boot
 
-![Alt text](/imgs/13.png)
+![Alt text](imgs/13.png)
 
 Nótese que la definimos es 3.1.5 en este ejemplo, por lo tanto debe trabajar con java 17+.
 
 Adicionalmente, en IntelliJ IDEA debe configurar la versión de SDK para el proyecto y los módulos. Tenga en cuenta que si no tiene un SDK compatible, lo puede descargar desde el mismo IntelliJ:
 
-![Alt text](/imgs/14.png)
+![Alt text](imgs/14.png)
 
-![Alt text](/imgs/15.png)
+![Alt text](imgs/15.png)
 
 ## Información adicional
 

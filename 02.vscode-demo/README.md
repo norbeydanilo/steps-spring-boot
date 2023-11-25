@@ -29,7 +29,7 @@ Estas extensiones proporcionan un conjunto de herramientas útiles para desarrol
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-c
+@RestController
 public class DemoApplicationController {
     
     @RequestMapping("/")
@@ -57,7 +57,7 @@ Spring Initializr es una extensión de Visual Studio Code que permite generar pr
 
 4. **Sigue el asistente**: Aparecerá un asistente que te guiará a través del proceso de creación del proyecto. Deberás seleccionar las opciones que se ajusten a tus necesidades, como el lenguaje de programación, la versión de Spring Boot, el tipo de proyecto (Maven o Gradle), y las dependencias que necesites.
 
-5. **Edita las dependencias del proyecto**: Una vez generado el proyecto, puedes agregar o eliminar dependencias navegando a tu archivo `pom.xml`, haciendo clic derecho y seleccionando "Edit starters". Aparecerá un menú desplegable que muestra las dependencias que ya tienes (comenzando con un √). Puedes buscar otras dependencias que quieras agregar a tu proyecto, o puedes hacer clic en las dependencias existentes para eliminarlas.
+5. **Edita las dependencias del proyecto**: Una vez generado el proyecto, puedes agregar o eliminar dependencias navegando a tu archivo `pom.xml`, haciendo clic derecho y seleccionando "Add starters". Aparecerá un menú desplegable que muestra las dependencias que ya tienes (comenzando con un √). Puedes buscar otras dependencias que quieras agregar a tu proyecto, o puedes hacer clic en las dependencias existentes para eliminarlas.
 
 ¡Y eso es todo! Ahora deberías tener un nuevo proyecto Spring Boot listo para ser desarrollado en Visual Studio Code.
 
@@ -88,3 +88,5 @@ Ej. `UserRepository.java`. Este repositorio incluye los métodos que llama el se
 ## /Models
 
 Ej. `UserModel.java`. Este modelo representa una tabla/entidad/tipo/colección en una clase Java.
+
+> Created with <3 by norbeydanilo
